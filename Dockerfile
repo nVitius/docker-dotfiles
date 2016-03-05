@@ -11,4 +11,6 @@ RUN useradd -ms /usr/bin/zsh nvitius
 USER mwalters
 WORKDIR /home/nvitius
 
+ADD . /home/nvitius
+
 ENTRYPOINT ["/usr/bin/zsh"]
